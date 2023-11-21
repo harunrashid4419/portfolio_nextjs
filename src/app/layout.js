@@ -1,6 +1,8 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
+import Navbar from "@/components/SharedPage/Navbar/Navbar";
+import Footer from "@/components/SharedPage/Footer/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -13,22 +15,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <div>
-          <ul>
-            <li>
-              <Link className="text-white" href="/">
-                Home
-              </Link>
-              <Link className="text-white" href="/about">
-                about
-              </Link>
-            </li>
-          </ul>
-        </div>
+        <Navbar />
         {children}
-        <div>
-          <p className="text-white">footer</p>
-        </div>
+        <Footer />
       </body>
     </html>
   );

@@ -1,0 +1,140 @@
+.mainFooter {
+  background-image: url(../../../Images//footer-img.png);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 0;
+}
+.footerSection {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+.link {
+  font-size: 32px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.paragraph {
+  color: #f5f5f5;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 20px 0;
+}
+.mainLinks {
+  display: flex;
+  gap: 20px;
+}
+.icon {
+  color: #747681;
+  background-color: #1d2234;
+  font-size: 45px;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.icon:hover {
+  background: #ffc576;
+  color: #000;
+}
+.footerHeading {
+  font-size: 24px;
+  color: #ffffff;
+  font-weight: 600;
+}
+.menuMain {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.contactInfo {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footerLink {
+  font-size: 18px;
+  color: #f5f5f5;
+  font-weight: 500;
+  width: fit-content;
+  transition: 0.5s;
+}
+.footerLink:hover {
+  color: #ffc576;
+}
+.mainInfo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.infoIcon {
+  font-size: 24px;
+  color: #ffc576;
+}
+.contact {
+  font-size: 18px;
+  color: #f5f5f5;
+  font-weight: 500;
+}
+.middleContect {
+  padding-left: 130px;
+}
+.rightContect {
+  padding-left: 50px;
+}
+.newsletter {
+  margin-top: 30px;
+}
+.newsletterWrap input {
+  background: #303a5b;
+  padding: 15px;
+  border-radius: 5px 0px 0px 5px;
+  color: white;
+  margin-top: 10px;
+}
+.newsletterWrap input::placeholder {
+  color: white;
+}
+.newsletterWrap input:focus {
+  outline: none;
+}
+.subscribeBtn {
+  background-color: #2662fa;
+  color: white;
+  font-size: 18px;
+  padding: 14px 15px 13px 15px;
+  border-radius: 0 5px 5px 0;
+}
+
+@media screen and (max-width: 1280px) {
+  .rightContect {
+    padding-left: 0px;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .middleContect {
+    padding-left: 50px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .footerSection {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 576px) {
+  .footerSection {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+  }
+  .middleContect {
+    padding-left: 0px;
+  }
+  .mainFooter{
+    padding: 20px 0;
+  }
+}
