@@ -3,6 +3,8 @@ import Lottie from "lottie-react";
 import style from "./Banner.style.module.css";
 import animationData from "../../../../public/amimation.json";
 import Typewriter from "typewriter-effect";
+import Paragraph from "@/components/SharedPage/Paragraph/Paragraph";
+import SocialLins from "@/components/SharedPage/SocialLinks/SocialLins";
 
 const Banner = () => {
   return (
@@ -26,11 +28,14 @@ const Banner = () => {
                 }}
               />
             </h1>
-            <p className={style.content}>
-              Yet bed any for travelling assistance indulgence unpleasing. Not
-              thoughts all exercise blessing. Indulgence way everything joy
-              alteration boisterous the attachment.
-            </p>
+            <div className={style.bannerParagraph}>
+              <Paragraph
+                content={
+                  "Yet bed any for travelling assistance indulgence unpleasing. Not thoughts all exercise blessing. Indulgence way everything joy alteration boisterous the attachment."
+                }
+              />
+            </div>
+            <SocialLins />
           </div>
           <div className={style.animation}>
             <Lottie animationData={animationData} loop={true} />

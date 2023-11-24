@@ -1,0 +1,36 @@
+.buttons {
+  padding: 10px 30px;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: rgba(255, 197, 118, 0.75);
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: 0.5s;
+}
+.content {
+  color: #ffc576;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+.arrowIcon {
+  color: rgba(255, 197, 118, 0.75);
+  font-size: 14px;
+  margin-top: 1px;
+  opacity: 0;
+  transition: 0.5s;
+}
+.buttons:hover {
+  background-color: #ffc576;
+}
+.buttons:hover .content {
+  color: #1f2235;
+}
+.buttons:hover .arrowIcon {
+  color: #1f2235;
+  opacity: 1;
+  margin-left: 5px;
+}

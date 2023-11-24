@@ -1,0 +1,17 @@
+.mainLinks {
+  display: flex;
+  gap: 20px;
+}
+.icon {
+  color: #747681;
+  background-color: #1d2234;
+  font-size: 45px;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.icon:hover {
+  background: #ffc576;
+  color: #000;
+}

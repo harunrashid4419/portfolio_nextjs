@@ -4,12 +4,12 @@
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 50px 0;
 }
 .footerSection {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 50px;
+  padding: 50px 0;
 }
 .link {
   font-size: 32px;
@@ -23,27 +23,11 @@
   font-weight: 400;
   margin: 20px 0;
 }
-.mainLinks {
-  display: flex;
-  gap: 20px;
-}
-.icon {
-  color: #747681;
-  background-color: #1d2234;
-  font-size: 45px;
-  padding: 10px;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: 0.5s;
-}
-.icon:hover {
-  background: #ffc576;
-  color: #000;
-}
 .footerHeading {
   font-size: 24px;
   color: #ffffff;
   font-weight: 600;
+  margin-bottom: 10px;
 }
 .menuMain {
   display: flex;
@@ -55,7 +39,7 @@
   margin-top: 30px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
 }
 .footerLink {
   font-size: 18px;
@@ -110,7 +94,17 @@
   padding: 14px 15px 13px 15px;
   border-radius: 0 5px 5px 0;
 }
-
+.copyRight {
+  text-align: center;
+  border-top: 1px solid #1e2235;
+  padding: 20px 0;
+}
+.owninfo{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 @media screen and (max-width: 1280px) {
   .rightContect {
     padding-left: 0px;
@@ -130,11 +124,9 @@
   .footerSection {
     grid-template-columns: repeat(1, 1fr);
     gap: 30px;
+    padding: 20px 0;
   }
   .middleContect {
     padding-left: 0px;
-  }
-  .mainFooter{
-    padding: 20px 0;
   }
 }

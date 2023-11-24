@@ -38,6 +38,9 @@
   font-weight: 400;
   margin-top: 15px;
 }
+.bannerParagraph{
+  padding: 10px 0 20px 0;
+}
 @media screen and (max-width: 992px) {
   .bannerSection {
     flex-direction: column;

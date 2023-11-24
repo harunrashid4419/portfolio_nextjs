@@ -1,10 +1,11 @@
 import Banner from "@/components/HomePage/Banner/Banner";
-import Image from "next/image";
+import GetInTouch from "@/components/HomePage/GetInTouch/GetInTouch";
 
 export default function Home() {
   return (
     <main>
       <Banner />
+      <GetInTouch />
     </main>
   );
 }

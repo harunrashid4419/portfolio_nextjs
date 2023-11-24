@@ -1,0 +1,31 @@
+.contactInfo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.icon {
+  color: #f1f1f1;
+  font-size: 24px;
+  border: 1px solid #a8a8a8;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  padding: 12px;
+  line-height: 50px;
+}
+.topContent {
+  color: #dadada;
+  font-size: 20px;
+  font-weight: 400;
+}
+.info {
+  cursor: pointer;
+  color: #aaa;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 5px;
+  transition: 0.5s;
+}
+.info:hover {
+  color: #ffffff;
+}
