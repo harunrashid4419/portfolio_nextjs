@@ -2,7 +2,58 @@
   background: #202020;
   padding: 50px 0;
 }
-.topContent {
+.touchSection {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+.form {
+  margin-top: 50px;
+}
+.nameEmail {
+  display: flex;
+  gap: 20px;
+}
+.inputFiled {
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid #6b6b6b;
+  padding: 10px 0;
+  width: 100%;
+  color: white;
+}
+.inputFiled::placeholder {
+  color: #b3b3b3;
+}
+.inputFiled:focus,
+.messageBox:focus {
+  outline: none;
+}
+.messageBox {
+  width: 100%;
+  background: transparent;
+  height: 150px;
+  border: 1px solid #6b6b6b;
+  border-radius: 5px;
+  margin-top: 50px;
+  padding: 10px;
+  color: white;
+}
+
+.btn {
+  margin-top: 30px;
   display: flex;
   justify-content: center;
+}
+@media screen and (max-width: 767px) {
+  .nameEmail {
+    flex-direction: column;
+  }
+  .form,
+  .messageBox {
+    margin-top: 30px;
+  }
+  .getInTouch{
+    padding: 30px 0;
+  }
 }

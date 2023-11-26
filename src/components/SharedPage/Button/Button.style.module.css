@@ -1,5 +1,5 @@
 .buttons {
-  padding: 10px 30px;
+  padding: 15px 40px;
   border-style: solid;
   border-width: 1px 1px 1px 1px;
   border-color: rgba(255, 197, 118, 0.75);
@@ -11,7 +11,7 @@
 }
 .content {
   color: #ffc576;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 600;
   text-transform: uppercase;
   transition: 0.5s;
@@ -31,6 +31,6 @@
 }
 .buttons:hover .arrowIcon {
   color: #1f2235;
+  margin-left: 10px;
   opacity: 1;
-  margin-left: 5px;
 }

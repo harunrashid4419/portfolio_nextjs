@@ -1,0 +1,36 @@
+.outlineButton {
+  display: flex;
+  align-items: center;
+  background: #ffc576;
+  padding: 15px 40px;
+  gap: 8px;
+  border-radius: 2px;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: rgba(255, 197, 118, 0.75);
+  transition: 0.5s;
+}
+.icon {
+  font-size: 24px;
+  color: #1f2235;
+  transition: 0.5s;
+}
+.content {
+  color: #1f2235;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+.outlineButton:hover {
+  background: transparent;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: rgba(255, 197, 118, 0.75);
+}
+.outlineButton:hover .content {
+  color: #ffc576;
+}
+.outlineButton:hover .icon {
+  color: #ffc576;
+}
