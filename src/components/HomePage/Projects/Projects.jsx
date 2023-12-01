@@ -4,6 +4,7 @@ import style from "./Projects.style.module.css";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import Button from "@/components/SharedPage/Button/Button";
+import Link from "next/link";
 
 const Projects = () => {
   const [datas, setdatas] = useState([]);
@@ -15,7 +16,7 @@ const Projects = () => {
         setdatas(data.slice(0, 3));
       });
   }, []);
-  console.log(datas.slice(0, 3));
+
   return (
     <div className={style.projectsSection}>
       <div className="container">
@@ -39,11 +40,16 @@ const Projects = () => {
                   <h2>{e?.name}</h2>
                   <p>{e?.description.slice(0, 100)}...</p>
                   <div className={style.btn}>
-                    <Button content={"Details"} />
+                    <Link href={`/project/${e?.id}`}>
+                      <Button content={"Details"} />
+                    </Link>
                   </div>
                 </div>
               </div>
             ))}
+          </div>
+          <div className={style.topHeading}>
+            <Button content={"See More"} />
           </div>
         </div>
       </div>

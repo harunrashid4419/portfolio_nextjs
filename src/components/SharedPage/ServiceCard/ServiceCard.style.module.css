@@ -1,0 +1,58 @@
+.serviceCard {
+  box-shadow: 0px 0px 50px 10px rgba(29, 29, 29, 0.05);
+  border-radius: 10px;
+  background: white;
+  padding: 30px;
+  transition: 0.5s;
+}
+.serviceIcon {
+  height: 85px;
+  width: 85px;
+  background: #e9eff4;
+  padding: 20px;
+  border-radius: 50%;
+  position: relative;
+  transition: 0.5s;
+}
+.icon {
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  transition: 0.5s;
+}
+.serviceCard h2 {
+  color: #04091e;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px 0;
+  transition: 0.5s;
+}
+.serviceCard p {
+  font-size: 16px;
+  color: #04091e;
+  font-weight: 400;
+  transition: 0.5s;
+}
+.serviceCard:hover {
+  background: #2662fa;
+  background-image: url(../../../Images/service.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+.serviceCard:hover .serviceIcon {
+  background: #3c72fb;
+}
+.serviceCard:hover .icon,
+.serviceCard:hover h2,
+.serviceCard:hover p {
+  color: white;
+}
+
+@media screen and (max-width: 576px) {
+    .serviceCard{
+        padding: 15px;
+    }
+}
