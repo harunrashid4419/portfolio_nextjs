@@ -3,8 +3,6 @@ import Heading from "@/components/SharedPage/Heading/Heading";
 import style from "../../HomePage/Projects/Projects.style.module.css";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import Button from "@/components/SharedPage/Button/Button";
-import Link from "next/link";
 import Loader from "@/components/SharedPage/Loader/Loader";
 import SmallBtn from "@/components/SharedPage/SmallBtn/SmallBtn";
 
@@ -23,7 +21,7 @@ const AllProjects = () => {
   }, []);
 
   const handleClick = () => {
-    
+
   }
 
   return (
