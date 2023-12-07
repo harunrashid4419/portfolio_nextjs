@@ -10,7 +10,7 @@ import { IoBarcodeOutline } from "react-icons/io5";
 
 const Service = () => {
   return (
-    <div className={style.mainService}>
+    <div id="service" className={style.mainService}>
       <div className="container">
         <div className={style.topHeader}>
           <Heading content={"Service"} />
@@ -20,42 +20,42 @@ const Service = () => {
             icon={SiCodesignal}
             content={"Front-end Development"}
             paragraph={
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, ipsam voluptatibus libero repellendus omnis nesciunt esse cum voluptate sit ratione?"
+              "I can make front-end development the development of a website or application using HTML, CSS, JavaScript, and  React JS."
             }
           />
           <ServiceCard
             icon={FaFigma}
             content={"Figma to React"}
             paragraph={
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, ipsam voluptatibus libero repellendus omnis nesciunt esse cum voluptate sit ratione?"
+              "I can convert specific pixels correctly from Figma to React JS. And that too with Responsibe. And it Will be user-friendly."
             }
           />
           <ServiceCard
             icon={BsFiletypePsd}
             content={"PSD to React"}
             paragraph={
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, ipsam voluptatibus libero repellendus omnis nesciunt esse cum voluptate sit ratione?"
+              "I can convert specific pixels correctly from PSD to React JS. And that too with Responsibe. And it Will be user-friendly."
             }
           />
           <ServiceCard
             icon={DiResponsive}
             content={"Responsive Design"}
             paragraph={
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, ipsam voluptatibus libero repellendus omnis nesciunt esse cum voluptate sit ratione?"
+              "I can do responsive design using flexible grids, layouts, and media queries. So the site can be displayed beautifully on any device."
             }
           />
           <ServiceCard
-            icon={FaQrcode }
+            icon={FaQrcode}
             content={"Web Development"}
             paragraph={
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, ipsam voluptatibus libero repellendus omnis nesciunt esse cum voluptate sit ratione?"
+              "Web development can range from simple static web pages to complex dynamic web applications with interactive features."
             }
           />
           <ServiceCard
             icon={IoBarcodeOutline}
             content={"MERN Stack Development"}
             paragraph={
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, ipsam voluptatibus libero repellendus omnis nesciunt esse cum voluptate sit ratione?"
+              "The MERN stack is a powerful and popular technology stack that leverages JavaScript throughout the entire development process."
             }
           />
         </div>

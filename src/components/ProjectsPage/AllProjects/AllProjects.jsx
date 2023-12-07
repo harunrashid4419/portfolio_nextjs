@@ -1,6 +1,6 @@
 "use client";
 import Heading from "@/components/SharedPage/Heading/Heading";
-import style from "./Projects.style.module.css";
+import style from "../../HomePage/Projects/Projects.style.module.css";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import Button from "@/components/SharedPage/Button/Button";
@@ -8,7 +8,7 @@ import Link from "next/link";
 import Loader from "@/components/SharedPage/Loader/Loader";
 import SmallBtn from "@/components/SharedPage/SmallBtn/SmallBtn";
 
-const Projects = () => {
+const AllProjects = () => {
   const [datas, setdatas] = useState([]);
   const [loading, setLoading] = useState(false);
 
@@ -17,25 +17,26 @@ const Projects = () => {
     fetch("https://personal-portfolio-server-kappa.vercel.app/projects")
       .then((res) => res.json())
       .then((data) => {
-        setdatas(data.slice(0, 3));
+        setdatas(data);
         setLoading(false);
       });
   }, []);
 
-  const handleClick = () => {};
+  const handleClick = () => {
+    
+  }
 
   return (
     <div className={style.projectsSection}>
       <div className="container">
         <div className={style.projects}>
           <div className={style.topHeading}>
-            <Heading content={"Projects"} />
+            <Heading content={"All Projects"} />
           </div>
           {loading ? (
             <Loader />
           ) : (
-            <>
-              <div className={style.allProjects}>
+            <div className={style.allProjects}>
                 {datas.map((e) => (
                   <div className={style.project} key={e?.id}>
                     <Image
@@ -79,12 +80,6 @@ const Projects = () => {
                   </div>
                 ))}
               </div>
-              <div className={style.topHeading}>
-                <Link href="/projects">
-                  <Button content={"See More"} />
-                </Link>
-              </div>
-            </>
           )}
         </div>
       </div>
@@ -92,4 +87,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default AllProjects;

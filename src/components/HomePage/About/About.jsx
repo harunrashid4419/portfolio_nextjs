@@ -8,7 +8,7 @@ import OutlineButton from "@/components/SharedPage/OutlineButton/OutlineButton";
 
 const About = () => {
   return (
-    <div className={style.about}>
+    <div id="about" className={style.about}>
       <div className="container">
         <div className={style.topHeader}>
           <Heading content={"About Me"} />
@@ -22,13 +22,20 @@ const About = () => {
             <div className={style.paragraph}>
               <Paragraph
                 content={
-                  "In id nulla magna. Nullam posuere fermentum mattis. Nunc id dui at sapien faucibus fermentum ut vel diam. Nullam tempus, nunc id efficitur sagittis, urna est ultricies eros, ac porta sem turpis quis leo. Nulla in feugiat elit."
+                  "Hello there! I'm Md. Harun Or Rashid is a passionate MERN stack developer with a knack for turning ideas into scalable and efficient web applications. Collaborative by nature, I enjoy working in agile environments where teamwork and innovation go hand in hand."
                 }
               />
             </div>
             <div className={style.btn}>
-              <Button content={"Contact Me"} />
-              <OutlineButton content={"Download CV"} />
+              <a href="#contact">
+                <Button content={"Contact Me"} />
+              </a>
+              <a
+                href="https://drive.google.com/file/d/12Z9Q1vT8Lp3DoOIRHhSI9vamvijg5fn9/view?usp=sharing"
+                target="_blank"
+              >
+                <OutlineButton content={"Download Resume"} />
+              </a>
             </div>
           </div>
         </div>

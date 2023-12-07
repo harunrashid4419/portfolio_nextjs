@@ -5,6 +5,7 @@ import animationData from "../../../../public/amimation.json";
 import Typewriter from "typewriter-effect";
 import Paragraph from "@/components/SharedPage/Paragraph/Paragraph";
 import SocialLins from "@/components/SharedPage/SocialLinks/SocialLins";
+import OutlineButton from "@/components/SharedPage/OutlineButton/OutlineButton";
 
 const Banner = () => {
   return (
@@ -31,11 +32,19 @@ const Banner = () => {
             <div className={style.bannerParagraph}>
               <Paragraph
                 content={
-                  "Yet bed any for travelling assistance indulgence unpleasing. Not thoughts all exercise blessing. Indulgence way everything joy alteration boisterous the attachment."
+                  "In an ever-evolving tech landscape, I stay updated with the latest developments and strive to integrate cutting-edge technologies into my projects. I believe in continuous learning and adapting to new methodologies to deliver top-notch solutions."
                 }
               />
             </div>
             <SocialLins />
+            <div className="mt-5 w-fit">
+              <a
+                href="https://drive.google.com/file/d/12Z9Q1vT8Lp3DoOIRHhSI9vamvijg5fn9/view?usp=sharing"
+                target="_blank"
+              >
+                <OutlineButton content={"Download Resume"} />
+              </a>
+            </div>
           </div>
           <div className={style.animation}>
             <Lottie animationData={animationData} loop={true} />

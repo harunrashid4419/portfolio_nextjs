@@ -4,9 +4,18 @@ import style from "./SocialLinks.style.module.css";
 const SocialLins = () => {
   return (
     <div className={style.mainLinks}>
-      <FaFacebookF className={style.icon} />
-      <FaLinkedinIn className={style.icon} />
-      <FaGithub className={style.icon} />
+      <a href="https://www.facebook.com/harunrashid.me" target="_blank">
+        <FaFacebookF className={style.icon} />
+      </a>
+      <a
+        href="https://www.linkedin.com/in/md-harun-or-rashid2/"
+        target="_blank"
+      >
+        <FaLinkedinIn className={style.icon} />
+      </a>
+      <a href="https://github.com/harunrashid4419" target="_blank">
+        <FaGithub className={style.icon} />
+      </a>
     </div>
   );
 };

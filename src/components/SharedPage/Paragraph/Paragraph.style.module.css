@@ -4,7 +4,7 @@
   font-weight: 400;
 }
 @media screen and (max-width: 576px) {
-  .paragraph{
+  .paragraph {
     font-size: 14px;
   }
 }

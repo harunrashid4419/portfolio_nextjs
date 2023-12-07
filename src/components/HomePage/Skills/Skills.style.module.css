@@ -1,0 +1,35 @@
+.skills {
+  padding: 50px 0;
+}
+.topHeading {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.sliderIcon {
+  font-size: 150px;
+  color: white;
+  border: 1px solid #ffc576;
+  padding: 30px;
+  border-radius: 50%;
+}
+#sliderGap {
+  width: 75%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1260px) {
+  #sliderGap {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .skills {
+    padding: 30px 0;
+  }
+}
+@media screen and (max-width: 360px) {
+  .sliderIcon {
+    font-size: 135px;
+  }
+}

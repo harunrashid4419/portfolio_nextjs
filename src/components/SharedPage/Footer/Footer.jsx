@@ -22,7 +22,7 @@ const Footer = () => {
               <div className={style.paragraph}>
                 <Paragraph
                   content={
-                    "We work with a passion of taking challenges and creating new ones in advertising sector."
+                    "Web development passion involves the enthusiasm and dedication to creating and enhancing websites or web applications. It's the joy of bringing ideas to life through coding, design, and problem-solving."
                   }
                 />
               </div>

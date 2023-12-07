@@ -1,0 +1,8 @@
+.smallBtn {
+  background: #ffc576;
+  color: black;
+  padding: 5px 15px;
+  border-radius: 2px;
+  text-transform: capitalize;
+  width: 116px;
+}

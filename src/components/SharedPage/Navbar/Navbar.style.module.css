@@ -1,7 +1,6 @@
 .mainNavbar {
-  /* background-color: #07233b; */
   background: #040c16;
-  padding: 30px 0;
+  padding: 20px 0;
 }
 .navbarSection {
   display: flex;
@@ -27,19 +26,19 @@
   color: white;
   transition: 0.5s;
 }
-.right ul li a::after{
-  content: '';
+.right ul li a::after {
+  content: "";
   display: block;
   width: 0;
   height: 1px;
   background-color: #ffc576;
-  transition: .5s;
+  transition: 0.5s;
 }
-.right ul li a:hover:after{
+.right ul li a:hover:after {
   width: 100%;
 }
 .right ul li a:hover {
-  color: #FFC576;
+  color: #ffc576;
 }
 .menuIcon {
   display: none;
@@ -52,9 +51,6 @@
   }
 }
 @media screen and (max-width: 768px) {
-  .mainNavbar {
-    background: transparent;
-  }
   .right ul {
     flex-direction: column;
     gap: 20px;
