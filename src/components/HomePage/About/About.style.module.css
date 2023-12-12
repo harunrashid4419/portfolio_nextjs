@@ -23,6 +23,25 @@
   width: 300px;
   height: 300px;
   border-radius: 50%;
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(to right, blue, orange) border-box;
+  border: 4px solid transparent;
+  position: relative;
+  animation: imgAnimation 7s ease-in-out infinite;
+}
+@keyframes imgAnimation {
+  0% {
+    left: 0px;
+  }
+  33% {
+    left: 50px;
+  }
+  66% {
+    left: -50px;
+  }
+  100% {
+    left: 0px;
+  }
 }
 .rightHeading {
   color: #0788ff;
@@ -56,7 +75,7 @@
   .aboutSection {
     padding-top: 30px;
   }
-  .paragraph{
+  .paragraph {
     padding: 15px 0;
   }
 }
