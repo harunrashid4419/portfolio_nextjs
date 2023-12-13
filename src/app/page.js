@@ -1,5 +1,6 @@
 import About from "@/components/HomePage/About/About";
 import Banner from "@/components/HomePage/Banner/Banner";
+import Experience from "@/components/HomePage/Experience/Experience";
 import GetInTouch from "@/components/HomePage/GetInTouch/GetInTouch";
 import Projects from "@/components/HomePage/Projects/Projects";
 import Service from "@/components/HomePage/Service/Service";
@@ -13,6 +14,7 @@ export default function Home({ data }) {
       <Skills />
       <Service />
       <Projects />
+      <Experience />
       <GetInTouch />
     </main>
   );

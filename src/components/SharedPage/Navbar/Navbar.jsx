@@ -18,7 +18,7 @@ const Navbar = () => {
           <div className={style.right}>
             <ul
               className={`md:static absolute duration-500 ease-in-out ${
-                click ? "top-[100px] right-0" : "top-[-350px] right-0"
+                click ? "top-[85px] right-0" : "top-[-350px] right-0"
               }`}
             >
               <li>

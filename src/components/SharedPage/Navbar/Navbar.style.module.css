@@ -59,6 +59,7 @@
     padding: 30px 50px;
     box-shadow: 0 0.125rem 0.25rem rgba(55, 55, 55, 0.075);
     border-top: 1px solid rgba(255, 255, 255, 0.2);
+    z-index: 9;
   }
   .menuIcon {
     display: block;
