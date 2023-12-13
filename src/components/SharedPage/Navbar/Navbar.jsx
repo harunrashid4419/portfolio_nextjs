@@ -24,21 +24,21 @@ const Navbar = () => {
               <li>
                 <Link href="/">Home</Link>
               </li>
-              {/* <li>
+              <li>
                 <a href="#about">About</a>
               </li>
               <li>
                 <a href="#skills">Skills</a>
-              </li> */}
+              </li>
               <li>
                 <Link href="/projects">Projects</Link>
               </li>
-              {/* <li>
+              <li>
                 <a href="#service">Service</a>
               </li>
               <li>
                 <a href="#contact">Contact</a>
-              </li> */}
+              </li>
             </ul>
             <div onClick={() => setClick(!click)}>
               {click ? (
