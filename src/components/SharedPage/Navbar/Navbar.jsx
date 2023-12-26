@@ -4,6 +4,8 @@ import style from "./Navbar.style.module.css";
 import { CiMenuFries } from "react-icons/ci";
 import { GrClose } from "react-icons/gr";
 import { useState } from "react";
+import Image from "next/image";
+import logo from "../../../Images/logo.png";
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
@@ -13,7 +15,10 @@ const Navbar = () => {
       <div className="container">
         <div className={style.navbarSection}>
           <div className={style.left}>
-            <Link href="/">Harun</Link>
+            <Link href="/">
+              <Image src={logo} alt="Logo" />
+              <span>Harun</span>
+            </Link>
           </div>
           <div className={style.right}>
             <ul

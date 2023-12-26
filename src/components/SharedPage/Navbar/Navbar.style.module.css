@@ -8,10 +8,17 @@
   align-items: center;
 }
 .left a {
+  display: flex;
+  align-items: center;
+}
+.left a span {
   font-size: 32px;
   color: white;
   font-weight: bold;
   text-transform: uppercase;
+}
+.left a img {
+  width: 50px;
 }
 .right ul {
   display: flex;
@@ -47,10 +54,10 @@
 }
 @media screen and (max-width: 992px) {
   .right ul {
-    gap: 30px;
+    gap: 25px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .right ul {
     flex-direction: column;
     gap: 20px;
